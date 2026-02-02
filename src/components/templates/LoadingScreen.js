@@ -9,18 +9,21 @@ import bonjour from '../../../public/img/logo.gif'
 
 export default function LoadingScreen() {
     const override  = {
-        position:"absolute",
-        top:'50%',
-        left:'50%',
-        display: "block",
-        margin: "auto auto",
-        borderColor: "blue",
+      
+      
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100vw',
+        height: '100vh',
+        backgroundColor:"black"
+        
       };
     return (
-        <div className='loadingScreen'>
+        <div style={override} className='loadingScreen' >
 
 
-            <Image src={bonjour} width={400} height={400}/>
+            <Image src={bonjour} width={400} height={400} alt='nimvex logo'/>
         </div>
     )
 }

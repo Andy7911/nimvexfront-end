@@ -10,7 +10,7 @@ import ReactMarkdown from 'react-markdown';
 import parse from 'html-react-parser';
 import Editeur from '../components/templates/Editeur'
 import UseCaseSwiper from '../components/organisms/UserCaseSwiper';
-
+import Quote from "../components/molecules/Quote";
 export default async function Home() {
 
  
@@ -58,7 +58,7 @@ export default async function Home() {
           {/* {element} */}
           <h1 className="desktop-show">{Hero.Headline}</h1>
           <p className="">{Hero.Text} </p>
-          <a className="primary-btn">{Hero.btn.Text}</a>
+          <a className="primary-btn" href="#Contact">{Hero.btn.Text}</a>
         </div>
         <div className="hero__right">
           <h1 className="mobile-show">{Hero.Headline}</h1>
@@ -77,10 +77,10 @@ export default async function Home() {
             <div className="service__card" key={index}>
               <div className="service__card_left">
                 <div>
-                  <h3>{item.Title} </h3>
-                  <h3> {item.title_2} </h3>
+                  <h3>{item.Title ?? "null"} </h3>
+                  <h3> {item.title_2 ?? 'Null'} </h3>
                 </div>
-                <a className="icon-btn" href='#'> <span className="icon"><Image src={iconButton} width={30} height={30} alt="icon" /> </span> <span className="desktop-show">En apprendre plus</span> </a>
+                <a className="icon-btn" href='/services'> <span className="icon"><Image src={iconButton} width={30} height={30} alt="icon" /> </span> <span className="desktop-show">En apprendre plus</span> </a>
               </div>
 
 
@@ -195,7 +195,7 @@ export default async function Home() {
         </div>
      
       </section> */}
-
+{/* <Quote/> */}
       <Contact />
     </div>
   );

@@ -30,6 +30,7 @@ export default async function Blog() {
 
 
                         <Image src={`${process.env.NEXT_PUBLIC_API_HOST}${item.picture.url}`} width={150} height={50}  alt={item.picture.alternativeText} />
+                        
                         <div className="blog__card_top">
 
                             <span className="blog__card_category">

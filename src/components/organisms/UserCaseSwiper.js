@@ -11,7 +11,7 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/a11y';
 
 export default function UserCaseSwiper({ UserCases }) {
-  console.log(UserCases);
+  console.log('user',UserCases);
  
   return (
     <section className="case_study">
@@ -51,7 +51,7 @@ export default function UserCaseSwiper({ UserCases }) {
             <SwiperSlide key={index}>
               <div className="case_study__text">
                 <p>{item.intro}</p>
-                <a>
+                <a href={`/cases/${item.slug}`}>
                   Learn more{' '}
                   <span>
                     <svg

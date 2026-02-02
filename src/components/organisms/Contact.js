@@ -25,7 +25,7 @@ export default function Contact() {
 
   }
   return (
-    <div className='contact'>
+    <div className='contact' id='Contact'>
       <div className='contact__title'>
       <h2>Contact Us</h2>
       <p>Connect with Us: Lets Discuss Your Digital Marketing Needs</p></div>

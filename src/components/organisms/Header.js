@@ -140,7 +140,7 @@ export default function Nav() {
               </ul>)}
 
           </li>
-          <li className='nav__bar_link'><a href='#'>Use Cases</a></li>
+          <li className='nav__bar_link'><a href='/cases'>Use Cases</a></li>
 
           <li className='nav__bar_link'><a href='/blog'>Blog</a></li>
 

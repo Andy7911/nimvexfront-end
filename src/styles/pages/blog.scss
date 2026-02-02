@@ -16,6 +16,8 @@
             border-radius: 7px;
             padding: 5px;
             color: #fff;
+            @media(max-width: $tablet-v){
+            margin-bottom: 20px;}
         }
 
         p {
@@ -32,10 +34,17 @@
         }
 
     }
+    &__top_content{
+        display: flex;
+        span{
+            margin-right: 7px;
+        }
+    }
 
     &__content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &__card {
@@ -45,10 +54,13 @@
         justify-content: space-between;
         border-radius: 10px;
         background-color: #fff;
-        width: calc(33% - 13px);
+        width: calc(30% - 13px);
         box-shadow: 5px 3px 9px -5px rgba(0, 0, 0, 0.74);
         margin-right: 20px;
         color: black;
+        @media(max-width:$tablet-h){
+            width:calc(45% - 13px)
+        }
         @media(max-width:$mobile){
             width: 100%;
         }
@@ -122,6 +134,10 @@
     .wysiwyg{
         h1{
             font-size: 50px;
+        }
+        img{
+            width: 100%;
+            height: auto;
         }
     }
 }

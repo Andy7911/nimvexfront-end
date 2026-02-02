@@ -40,6 +40,7 @@
          box-shadow: 5px 3px 9px -5px #000000;
           display: flex;
           flex-wrap: wrap;
+          flex-direction: column;
           justify-content: space-between;
           width: calc(50% - 10px);
             padding: 20px 15px;
@@ -52,8 +53,9 @@
             
          
             img{
+
                 margin: auto;
-                border-radius: 10px;
+                border-radius: 50%;
                 opacity: 0.5;
             }
         }
