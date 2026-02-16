@@ -19,6 +19,9 @@
         align-items: start;
 
     }
+    @media(max-width:$mobile){
+        padding-left: 0px;
+    }
 
     &__logo {
         img {
@@ -27,9 +30,12 @@
 
             @media(max-width:$tablet-v) {
                 width: 125px;
+              
 
             }
+
         }
+        margin-left: 50px;
     }
 
     &__toogle {
